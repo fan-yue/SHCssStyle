@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <title>样式一</title>
+    <link rel="stylesheet" href="./public.css">
+    <style>
+        *{margin: 0 auto;padding: 0;box-sizing: border-box;}
+        body{
+            font-size: 62.5%;font-size: 10px;
+        }  
+    /* 该页面样式 */
+        .content{
+           max-width: 640px;font-size: 1rem;
+        }
+        .demo{
+            padding:.5rem 1rem;font-size: 10px;
+            background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);   
+        }
+        .demo div{
+            width: 10rem;height: 10rem;border: 1px solid black;border-radius: 5px;display:inline-block;
+        }
+        .opa{
+            background:gray;opacity: .5;
+        }
+        .rga{
+            background:rgba(192,192,192,.5);
+        }
+    </style>
+</head> 
+<body>
+    <div class="content">
+    <!-- opacity和 background-color: rgba(red, green, blue, .5);-->
+        <p>opacity: .5  透明度属性的继承及解决办法</p>
+        <div class="demo">
+            <div class="opa">
+                <p>文字经过opacity的属性继承导致文字也出现透明度的问题。</p>
+            </div>
+            <div class="rga">
+                <p> background:rgba(192,192,192,.5)时候可以避免出现继承了父级的属性</p>
+            </div>
+        </div>
+
+    <!-- 只用a标签中有.ask_click的 class就可以打开链接，减少了每个a链接都增加咨询你链接的步骤 -->
+        <p>利用jQuery将a链接进行跳转</p>
+        <a href="#01" class="ask_click btn button1">链接跳转</a>
+        <script>
+            $("body").on("click",".ask_click",function(){
+                window.open("https://ddt.zoosnet.net/LR/Chatpre.aspx?id=DDT25704954&lng=cn");
+            });
+        </script>
+        <a href="#02" class="btn button2">按钮一</a>
+        <a href="#03" class="btn">按钮阴影</a>
+    </div>
+</body>
+</html>

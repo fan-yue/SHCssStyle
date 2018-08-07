@@ -1,0 +1,52 @@
+*{
+    margin: 0 auto;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+/* 通用样式 */
+.btn{
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:3px;
+    padding: 5px 7px;
+    color: white;background: black;
+}
+    /* 圆角按钮 */
+.btn_yuan{
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:25px;
+    padding: 5px 7px;
+    color: white;background: black;
+}
+    /* 默认按钮 */
+.default{
+    border: 1px solid black;
+}
+.button1{
+    background-color:#30cfd0;
+}
+/* 划过显示#f44336颜色 */
+.button2{
+    background-color: #330867;
+}
+.button2:hover{
+    background-color: #f44336;
+    color: white;
+    -webkit-transition-duration: .2s; /* Safari */
+    transition-duration: .2s;
+}
+/* 阴影效果 */
+.button3{
+    
+}
+/* margin */
+.mt5{margin-top: 5px;}
+.mb5{margin-bottom: 5px;}
+.mr5{margin-left: 5px;}
+.ml5{margin-left: 5px;}

@@ -1,0 +1,40 @@
+*{
+    margin: 0 auto;padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    max-width: 640px;
+    position: relative;
+    border:1px solid #555;
+    
+}
+.banner .imgs{
+    max-width: 64rem;
+    height: 32rem;
+}   
+.banner .lf_lr span{
+    display: inline-block;
+    position: absolute;top: 45%;
+    cursor: pointer;
+}
+.left{
+    left:0;
+}
+.right{
+    transform:rotateZ(180deg);
+    right:0%;
+}
+.point{
+    position: absolute;
+    left:43%;bottom: 10px;
+}
+.point span{
+    display: inline-block;
+    width: 15px;height: 15px;
+    border-radius: 50px;
+    border: 1px solid #555;
+    margin-left: 1px;
+}
+.cl_click{
+    background:#46aef7;
+}
